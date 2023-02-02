@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    "./resources/views/**/*.{html,js,php,blade}"
+    "./resources/views/**/*.{html,js,php,blade}",
+    "./resources/view/**/**/*.{html,js,php,blade.php}",
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
@@ -11,6 +12,6 @@ module.exports = {
   },
   plugins: [
 
-    
+
   ],
 }
