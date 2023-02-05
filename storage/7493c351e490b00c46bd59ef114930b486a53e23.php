@@ -1,0 +1,1 @@
+<?php /**PATH E:\xampp\htdocs\PHP\Course\WE17315\ASSIGNMENT\app\views/dashboard/test.blade.php ENDPATH**/ ?>

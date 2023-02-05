@@ -5,8 +5,8 @@ use App\Controllers\BaseController;
 use App\Controllers\Dashboard\UserController;
 use App\Controllers\User\HomeController;
 
-$user_controller = new UserController();
-$url = $_GET['url'] ?? "/";
+    $url = $_GET['url'] ?? "/";
+    $user_controller = new UserController();
 switch ($url) {
     case "list-user":
     case "/":
@@ -22,12 +22,15 @@ switch ($url) {
         $user_controller->UpdateAccount();
         break;
     case "store-update-account":
-
         $user_controller->StoreUpdateAccount();
         break;
     case "delete-account":
         $user_controller->DeleteAccount();
         break;
+        case "store-delete-account":
+        $user_controller->StoreDeleteAccount();
+        break;
+
     default:
         $controller = new BaseController();
         $controller->error();
